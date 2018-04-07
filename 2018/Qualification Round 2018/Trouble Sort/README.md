@@ -1,6 +1,6 @@
-#Trouble Sort
+# Trouble Sort
 
-##Problem
+## Problem
 
 Deep in Code Jam's secret algorithm labs, we devote countless hours to wrestling with one of the most complex problems of our time: efficiently sorting a list of integers into non-decreasing order. We have taken a careful look at the classic bubble sort algorithm, and we are pleased to announce a new variant.
 
@@ -19,13 +19,13 @@ The basic operation of the standard bubble sort algorithm is to examine a pair o
 
 For example, for L = 5 6 6 4 3, Trouble Sort would proceed as follows:
 
-##First pass:
+## First pass:
 
 inspect 5 6 6, do nothing: 5 6 6 4 3
 inspect 6 6 4, see that 6 > 4, reverse the triplet: 5 4 6 6 3
 inspect 6 6 3, see that 6 > 3, reverse the triplet: 5 4 3 6 6
 
-##Second pass:
+## Second pass:
 
 inspect 5 4 3, see that 5 > 3, reverse the triplet: 3 4 5 6 6
 inspect 4 5 6, do nothing: 3 4 5 6 6
@@ -35,15 +35,15 @@ We were looking forward to presenting Trouble Sort at the Special Interest Group
 
 We need your help with some further research. Given a list of N integers, determine whether Trouble Sort will successfully sort the list into non-decreasing order. If it will not, find the index (counting starting from 0) of the first sorting error after the algorithm has finished: that is, the first value that is larger than the value that comes directly after it when the algorithm is done.
 
-##Input
+## Input
 
 The first line of the input gives the number of test cases, T. T test cases follow. Each test case consists of two lines: one line with an integer N, the number of values in the list, and then another line with N integers Vi, the list of values.
 
-##Output
+## Output
 
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is OK if Trouble Sort correctly sorts the list, or the index (counting starting from 0) of the first sorting error, as described above.
 
-##Limits
+## Limits
 
 1 ≤ T ≤ 100.
 0 ≤ Vi ≤ 109, for all i.
@@ -57,13 +57,13 @@ Test set 2 (Hidden)
 3 ≤ N ≤ 105.
 Time limit (for the entire test set): 20 seconds.
 
-##Special Note
+## Special Note
 
 Notice that test set 2 for this problem has a large amount of input, so using a non-buffered reader might lead to slower input reading. In addition, keep in mind that certain languages have a small input buffer size by default.
 
-##Sample
+## Sample
 
-###Input
+### Input
 ```
 2
 5
@@ -71,7 +71,7 @@ Notice that test set 2 for this problem has a large amount of input, so using a 
 3
 8 9 7
 ```
-###Output
+### Output
 ```
 Case #1: OK
 Case #2: 1
