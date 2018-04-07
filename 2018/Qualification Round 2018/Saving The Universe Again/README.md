@@ -45,6 +45,7 @@ No additional restrictions to the Limits section.
 ## Sample
 
 ### Input
+```
 6
 1 CS
 2 CS
@@ -52,15 +53,16 @@ No additional restrictions to the Limits section.
 6 SCCSSC
 2 CC
 3 CSCSS
-
+```
 ### Output
+```
 Case #1: 1
 Case #2: 0
 Case #3: IMPOSSIBLE
 Case #4: 2
 Case #5: 0
 Case #6: 5
-
+```
 ## Note that the last three sample cases would not appear in test set 1.
 
 In Sample Case #1, the President can swap the two instructions to reduce the total damage to 1, which the shield can withstand.

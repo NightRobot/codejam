@@ -22,24 +22,31 @@ The area of the shadow (in km2), computed by projecting all 8 vertices onto the 
 Please note that you might need to output more than 6 digits after the decimal point to safely pass the checks mentioned above. If there are multiple acceptable answers, you may output any one of them.
 
 ## Limits
+```
 1 ≤ T ≤ 100.
 Time limit: 30 seconds per test set.
 Memory limit: 1GB.
+```
 
 ### Test set 1 (Visible)
+```
 1.000000 ≤ A ≤ 1.414213
+```
 
 ### Test set 2 (Hidden)
+```
 1.000000 ≤ A ≤ 1.732050
-
+```
 ## Sample
 
 ### Input
+```
 2
 1.000000
 1.414213
-
+```
 ### Output
+```
 Case #1:
 0.5 0 0
 0 0.5 0
@@ -48,7 +55,7 @@ Case #2:
 0.3535533905932738 0.3535533905932738 0
 -0.3535533905932738 0.3535533905932738 0
 0 0 0.5
-
+```
 In Sample Case #1, there is no need to rotate the cube at all; with two of its faces already parallel to the plane, the cube is already casting a shadow that is a square with side length 1.
 
 In Sample Case #2, one possible solution is to tell the aliens to give the cube a 45 degree turn around the x = y = 0 line, creating a shadow that is a rectangle with dimensions of 1 and sqrt(2).

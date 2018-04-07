@@ -44,19 +44,21 @@ The first line of the input gives the number of test cases, T. T test cases foll
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is OK if Trouble Sort correctly sorts the list, or the index (counting starting from 0) of the first sorting error, as described above.
 
 ## Limits
-
+```
 1 ≤ T ≤ 100.
 0 ≤ Vi ≤ 109, for all i.
 Memory limit: 1GB.
-
+```
 ### Test set 1 (Visible)
+```
 3 ≤ N ≤ 100.
 Time limit (for the entire test set): 10 seconds.
-
+```
 ### Test set 2 (Hidden)
+```
 3 ≤ N ≤ 105.
 Time limit (for the entire test set): 20 seconds.
-
+```
 ## Special Note
 
 Notice that test set 2 for this problem has a large amount of input, so using a non-buffered reader might lead to slower input reading. In addition, keep in mind that certain languages have a small input buffer size by default.
