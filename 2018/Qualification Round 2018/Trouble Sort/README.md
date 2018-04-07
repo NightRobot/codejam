@@ -49,11 +49,11 @@ For each test case, output one line containing Case #x: y, where x is the test c
 0 ≤ Vi ≤ 109, for all i.
 Memory limit: 1GB.
 
-Test set 1 (Visible)
+### Test set 1 (Visible)
 3 ≤ N ≤ 100.
 Time limit (for the entire test set): 10 seconds.
 
-Test set 2 (Hidden)
+### Test set 2 (Hidden)
 3 ≤ N ≤ 105.
 Time limit (for the entire test set): 20 seconds.
 

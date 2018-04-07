@@ -1,5 +1,5 @@
-#Go, Gopher!
-##Problem
+# Go, Gopher!
+## Problem
 The Code Jam team has just purchased an orchard that is a two-dimensional matrix of cells of unprepared soil, with 1000 rows and 1000 columns. We plan to use this orchard to grow a variety of trees — AVL, binary, red-black, splay, and so on — so we need to prepare some of the cells by digging holes:
 
 In order to have enough trees to use for each year's tree problems, we need there to be at least A prepared cells.
@@ -20,7 +20,7 @@ Digging is hard work for humans, so we have borrowed the Go gopher from the Goog
 
 We can only deploy the gopher up to 1000 times before it gets too tired to keep digging, so we need your help in figuring out how to deploy it strategically. When you deploy the gopher, you will be told which cell the gopher actually prepared, and you can take this information into account before deploying it again, if needed. Note that you do not have to declare the dimensions or location of a rectangle in advance.
 
-##Input and output
+## Input and output
 This problem is interactive, which means that the concepts of input and output are different than in standard Code Jam problems. You will interact with a separate process that both provides you with information and evaluates your responses. All information comes into your program via standard input; anything that you need to communicate should be sent via standard output. Remember that many programming languages buffer the output by default, so make sure your output actually goes out (for instance, by flushing the buffer) before blocking to wait for a response. See the FAQ for an explanation of what it means to flush the buffer. Anything your program sends through standard error is ignored, but it might consume some memory and be counted against your memory limit, so do not overflow it. To help you debug, a local testing tool script (in Python) is provided at the very end of the problem statement. In addition, sample solutions to a previous Code Jam interactive problem (in all of our supported languages) are provided here.
 
 Initially, your program should read a single line containing a single integer T indicating the number of test cases. Then, you need to process T test cases.
@@ -39,19 +39,19 @@ You should not send additional information to the judge after solving all test c
 
 Please be advised that for a given test case, the cells that the gopher will pick from each 3x3 block are (pseudo-)random and independent of each other, but they are determined using the same seed each time for the same test case, so a solution that gives an incorrect result for a test case will do so consistently across all attempts for the same test case. We have also set different seeds for different test cases.
 
-##Limits
+## Limits
 1 ≤ T ≤ 20.
 Memory limit: 1 GB.
 
-Test set 1 (Visible)
+### Test set 1 (Visible)
 A = 20.
 Time limit (for the entire test set): 20 seconds.
 
-Test set 2 (Hidden)
+### Test set 2 (Hidden)
 A = 200.
 Time limit (for the entire test set): 60 seconds.
 
-##Sample interaction
+## Sample interaction
 ```
   t = readline_int()         // reads 2 into t
   a = readline_int()         // reads 3 into a
@@ -92,7 +92,7 @@ Now the pseudocode is ready for the second test case. It again first reads an in
 
 The code above is another example. Suppose for the second test case, the code remembers to flush the output buffer, but sends out cell 1 1 to prepare. Remember that the row and column of the chosen cell must both be in the range [2, 999], so 1 1 is illegal! As a result, the judge sends back -1 -1. However, after reading -1 -1 into x and y, the code proceeds to send another cell location to the judge, and wait. Since there is nothing in the input stream (the judge has stopped sending info), the code hangs and will eventually receive a Time Limit Exceeded error.
 
-##Note
+## Note
 that if the code in the example above exits immediately after reading -1 -1, it will receive a Wrong Answer instead:
 
 ```
@@ -101,7 +101,7 @@ that if the code in the example above exits immediately after reading -1 -1, it 
   x, y = readline_two_int()  // reads -1 -1, since 1 is outside the range [2, 999]
   exit                       // receives a Wrong Answer judgment
 ```
-##Local Testing Tool
+## Local Testing Tool
 To better facilitate local testing, we provide you the following script. Instructions are included inside. You are encouraged to add more test cases for better testing. Please be advised that although the testing tool is intended to simulate the judging system, it is NOT the real judging system and might behave differently.
 
 If your code passes the testing tool but fails the real judge, please check here to make sure that you are using the same compiler as us.
