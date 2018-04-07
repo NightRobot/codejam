@@ -29,19 +29,22 @@ The first line of the input gives the number of test cases, T. T test cases foll
 For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is either the minimum number of hacks needed to accomplish the goal, or IMPOSSIBLE if it is not possible.
 
 ## Limits
+```
 1 ≤ T ≤ 100.
 1 ≤ D ≤ 109.
 2 ≤ length of P ≤ 30.
 Every character in P is either C or S.
 Time limit: 20 seconds per test set.
 Memory limit: 1GB.
-
+```
 ### Test set 1 (Visible)
+```
 The robot's program contains either zero or one C characters.
-
+```
 ### Test set 2 (Hidden)
+```
 No additional restrictions to the Limits section.
-
+```
 ## Sample
 
 ### Input
