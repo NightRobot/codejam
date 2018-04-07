@@ -64,19 +64,18 @@ Notice that test set 2 for this problem has a large amount of input, so using a 
 ##Sample
 
 ###Input
-
+```
 2
-
 5
 5 6 8 4 3
 3
 8 9 7
-
+```
 ###Output
-
+```
 Case #1: OK
 Case #2: 1
-
+```
 Sample Case #1 is similar to the first one described in the problem statement. Trouble Sort correctly sorts this list, so the answer is OK.
 
 Sample Case #2 is the second one described in the problem statement. Trouble Sort does not correctly sort this list, since it terminates with the list 7 9 8. The 9 is the first value in the list that is larger than the next value, so the index of the first sorting error is 1.
