@@ -40,17 +40,20 @@ You should not send additional information to the judge after solving all test c
 Please be advised that for a given test case, the cells that the gopher will pick from each 3x3 block are (pseudo-)random and independent of each other, but they are determined using the same seed each time for the same test case, so a solution that gives an incorrect result for a test case will do so consistently across all attempts for the same test case. We have also set different seeds for different test cases.
 
 ## Limits
+```
 1 ≤ T ≤ 20.
 Memory limit: 1 GB.
-
+```
 ### Test set 1 (Visible)
+```
 A = 20.
 Time limit (for the entire test set): 20 seconds.
-
+```
 ### Test set 2 (Hidden)
+```
 A = 200.
 Time limit (for the entire test set): 60 seconds.
-
+```
 ## Sample interaction
 ```
   t = readline_int()         // reads 2 into t
